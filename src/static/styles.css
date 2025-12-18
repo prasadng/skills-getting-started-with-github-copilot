@@ -65,13 +65,74 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Participants section styling */
+.participants {
+  margin-top: 12px;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+/* Keep bullets but style each entry as a soft chip */
+.participants ul {
+  margin: 0;
+}
+
+/* Hide default bullets and make list items appear as rows with a remove button */
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: #eef4ff;
+  border: 1px solid #e0ecff;
+  border-radius: 6px;
+  color: #0b3d91;
+  font-size: 14px;
+}
+
+.participant-email {
+  margin-right: 10px;
+  word-break: break-all;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+/* Message when no participants exist */
+.participants .info {
+  margin: 0;
+  padding: 8px 10px;
+  background: #fff8e1;
+  border: 1px solid #ffecb3;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 14px;
+  color: #8a6d00;
 }
 
 .form-group {
